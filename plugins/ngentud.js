@@ -62,7 +62,8 @@ hsl = `*—[ Hasil Dari ${command} ${name.vnmae || name.notify || name.name || (
 
 ${wm}
 `
-
+
+
 global.db.data.users[m.sender].warn += 10
 global.db.data.users[m.sender].money += 100000
 global.db.data.users[m.sender].exp += rbrb5
@@ -97,8 +98,8 @@ setTimeout(() => {
 handler.help = ['ngewe', 'ngentod', 'ngocok']
 handler.tags = ['rpg']
 handler.command = /^(ngewe|ngentod|ngocok)$/i
-handler.register = true
-handler.premium = true
+handler.register = false
+handler.premium = false
 
 module.exports = handler
 let wm = global.botwm
