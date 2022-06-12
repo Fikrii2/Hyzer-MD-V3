@@ -19,8 +19,8 @@ global.web = 'https://hyzerr-apii.herokuapp.com' //ubah jadi website lu, bisa li
 global.price1 = '1 bulan = 20.000\n2 Minggu 10.000\n1 Minggu 5.000'
 
 //=======『 Tampilan Dan Lainnya 』============//
-global.fotonya1 = 'https://telegra.ph/file/e4a2f4339da8a32ad20a1.jpg' //ganti jadi foto bot mu
-global.fotonya2 = 'https://telegra.ph/file/8c471d45b6cedad43cf84.jpg' //ini juga ganti 
+global.fotonya1 = 'https://telegra.ph/file/1847e13cd94e45b2d3ee8.jpg' //ganti jadi foto bot mu
+global.fotonya2 = 'https://telegra.ph/file/1847e13cd94e45b2d3ee8.jpg' //ini juga ganti 
 global.lolkey = 'Fiktod' //biar mudah ngegantinya semisal apikeynya expired:v
 global.zenzkey = 'Fiktod' //ganti jadi apikey lu kalau expired
 global.wm = 'Miku'
