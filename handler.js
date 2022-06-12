@@ -425,7 +425,7 @@ module.exports = {
                     if (!('delete' in chat)) chat.delete = true
                     if (!('antiLink' in chat)) chat.antiLink = true
                     if (!('viewonce' in chat)) chat.viewonce = false
-                    if (!('antiToxic' in chat)) chat.antiToxic = false
+                    if (!('antiToxic' in chat)) chat.antiToxic = true
                 } else global.db.data.chats[m.chat] = {
                     isBanned: false,
                     welcome: true,
@@ -439,9 +439,35 @@ module.exports = {
                     viewonce: false,
                     antiToxic: true,
                 }
-            } catch (e) {
-                console.error(e)
-            }
+        
+                let settings = global.db.data.settings[this.user.jid]
+        if (typeof settings !== 'object') global.db.data.settings[this.user.jid] = {}
+        if (settings) {
+          if (!'anon' in settings) settings.anon = true
+          if (!'anticall' in settings) settings.anticall = true
+          if (!'antispam' in settings) settings.antispam = true
+          if (!'antitroli' in settings) settings.antitroli = false
+          if (!'backup' in settings) settings.backup = false
+          if (!isNumber(settings.backupDB)) settings.backupDB = 0
+          if (!'groupOnly' in settings) settings.groupOnly = false
+          if (!'jadibot' in settings) settings.groupOnly = false
+          if (!'nsfw' in settings) settings.nsfw = true
+          if (!isNumber(settings.status)) settings.status = 0
+        } else global.db.data.settings[this.user.jid] = {
+          anon: true,
+          anticall: true,
+          antispam: true,
+          antitroli: false,
+          backup: false,
+          backupDB: 0,
+          groupOnly: false,
+          jadibot: false,
+          onsfw: true,
+          status: 0,
+        }
+      } catch (e) {
+        console.error(e)
+      }
             if (opts['nyimak']) return
             if (!m.fromMe && opts['self']) return
             if (opts['pconly'] && m.chat.endsWith('g.us')) return
