@@ -61,6 +61,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   'downloader': 'MENU DOWNLOADER',
   'xp': 'MENU EXP',
   'fun': 'MENU FUN',
+  'nulis': 'MagerNulis & Logo',
   'game': 'MENU GAME',
   'github': 'MENU GITHUB',
   'group': 'MENU GROUP',
@@ -106,6 +107,9 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   }
   if (teks == 'fun') tags = {
   'fun': 'MENU FUN',
+  }
+  if (teks == 'nulis') tags = {
+    'nulis': 'MagerNulis & Logo'
   }
   if (teks == 'game') tags = {
   'game': 'MENU GAME',
@@ -350,6 +354,10 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
                   "description": "Menampilkan Menu Fun",
                   "rowId": `${_p}? fun`
                 }, {
+                  "title": "|✒️| Nulis & Logo",
+                  "description": "Menu Nulis & Logo",
+                  "rowId": ".? nulis"
+               }, { 
                   "title": "│🎮│GAME",
                   "description": "Menampilkan Menu Game",
                   "rowId": `${_p}? game`
