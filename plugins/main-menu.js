@@ -330,6 +330,10 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
                   "description": "Menampilkan Menu Anime",
                   "rowId": `${_p}? anime`
                 }, {
+                  "title": "😣『 Vn Imuet 』",
+                  "description": "Mendengarkan Vn Yang Sangat Imuet",
+                  "rowId": ".? vn"                                                      
+                }, {
                   "title": "│🎇│STICKER & CONVERTER",
                   "description": "Menampilkan Menu Sticker",
                   "rowId": `${_p}? sticker`
