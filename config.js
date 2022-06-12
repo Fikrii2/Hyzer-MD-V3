@@ -15,7 +15,7 @@ global.gopay = '081233738677'
 //=============『 Info Bot 』=================//
 global.namebot = 'Miku'
 global.gc = 'https://chat.whatsapp.com/KpS9eHNALBs3mXXJGtzuZE'
-global.web = 'https://hyzerr-apii.herokuapp.com' //ubah jadi website lu, bisa link ig, link github, link yt, klo link gc ntr beda tampilan lagi. 
+global.web = '' //ubah jadi website lu, bisa link ig, link github, link yt, klo link gc ntr beda tampilan lagi. 
 global.price1 = '1 bulan = 20.000\n2 Minggu 10.000\n1 Minggu 5.000'
 
 //=======『 Tampilan Dan Lainnya 』============//
