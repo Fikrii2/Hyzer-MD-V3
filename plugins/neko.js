@@ -1,6 +1,6 @@
 let fetch = require('node-fetch')
 let handler = async (m, { conn, usedPrefix, command }) => {
-  let res = await fetch('https://api.waifu.pics/sfw/neko')
+  let res = await fetch('https://api.lolhuman.xyz/api/random/neko?apikey=Fiktod')
   if (!res.ok) throw await res.text()
   let json = await res.json()
   if (!json.url) throw 'Error!'
