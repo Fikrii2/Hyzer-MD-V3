@@ -56,6 +56,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   'advanced': 'ADVANCED',
   'absen': 'MENU ABSEN',
   'anime': 'MENU ANIME',
+  'vn': 'Vn Imuet',
   'sticker': 'MENU CONVERT',
   'downloader': 'MENU DOWNLOADER',
   'xp': 'MENU EXP',
@@ -90,6 +91,9 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   }
   if (teks == 'anime') tags = {
   'anime': 'MENU ANIME',
+  }
+  if (teks == 'vn') tags = {
+  'vn': 'MENU VN IMUET',
   }
   if (teks == 'sticker') tags = {
   'sticker': 'MENU CONVERT',
@@ -286,6 +290,8 @@ if (teks == '404') {
 let menuu = `┌───────⬣
 │⬡ Aktif selama ${uptime}
 │⬡ ${Object.keys(global.db.data.users).length} Pengguna
+│⬡ Date : ${week} ${date}
+│⬡ Time : ${wib}
 │⬡ Mode : ${global.opts['self'] ? 'Self' : 'publik'}
 │⬡ ${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length} Chat Terbanned
 │⬡ ${Object.entries(global.db.data.users).filter(user => user[1].banned).length} Pengguna Terbanned
@@ -323,6 +329,10 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
                   "title": "│⛩️│ANIME",
                   "description": "Menampilkan Menu Anime",
                   "rowId": `${_p}? anime`
+                }, {
+                  "title": "😣『 VN IMUET 』",
+                  "description": "Mendengarkan Vn Yang Sangat Imuet",
+                  "rowId": `{_p}? vn`                                                  
                 }, {
                   "title": "│🎇│STICKER & CONVERTER",
                   "description": "Menampilkan Menu Sticker",
@@ -498,37 +508,16 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
             hydratedContentText: text, 
             hydratedFooterText: wm2, 
             hydratedButtons: [{
-            urlButton: {
-               displayText: 'Website Creator',
-               url: web
-             }
-
-           },
-             {
-             urlButton: {
-               displayText: 'Group Bot', 
-               url: gc
-             }
-
-           },
-               {
              quickReplyButton: {
-               displayText: 'Owner',
+               displayText: 'Pemilik Bot',
                id: '.owner',
-             }
-
-           },
-               {
-             quickReplyButton: {
-               displayText: 'Donasi',
-               id: '.donasi',
              }
 
            },
            {
              quickReplyButton: {
-               displayText: 'Credits',
-               id: '.tqto',
+               displayText: 'Donasi',
+               id: '.donasi',
              }
            }]
          }
