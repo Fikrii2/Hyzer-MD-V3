@@ -1,10 +1,10 @@
 let fetch = require('node-fetch')
 let handler = async (m, { conn, usedPrefix, command }) => {
 	if (!db.data.chats[m.chat].nsfw && m.isGroup) throw global.nsfw
-  conn.sendButtonImg(m.chat, await ( await fetch(`https://api.lolhuman.xyz/api/random/nsfw/neko?apikey=rey2k21`)).buffer(), `wangy wangy wangy`, watermark, 'NEXT', `${usedPrefix + command}`, m, false)
+  conn.sendButtonImg(m.chat, await ( await fetch(`https://api.lolhuman.xyz/api/random/nsfw/neko?apikey=Fiktod`)).buffer(), `wangy wangy wangy`, watermark, 'NEXT', `${usedPrefix + command}`, m, false)
 }
 handler.help = ['nsfwneko']
-handler.tags = ['hentai']
+handler.tags = ['nsfw']
 
 handler.command = /^(nsfwneko)$/i
 handler.owner = false
