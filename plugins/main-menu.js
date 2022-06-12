@@ -418,8 +418,8 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
                   "description": "Menampilkan Maker Text",
                   "rowId": `${_p}? text`
                 }, {
-                  "title": "│🧼│HENTAI",
-                  "description": "Menampilkan Menu Hentai",
+                  "title": "│🥵│NSFW",
+                  "description": "Menampilkan Menu Haram",
                   "rowId": `${_p}? nsfw`
                 }, {
                   "title": "│🌚│RANDOM",
