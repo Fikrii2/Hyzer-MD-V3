@@ -14,6 +14,12 @@ let handler = async (m, { conn }) => {
 ║┊ ⌲  _15k (Permanent Premium)_
 ╰═ ┅ ═══════
 
+╭═══ *〘 𝗣𝗮𝘆𝗺𝗲𝗻𝘁 〙*
+║ ┅ ๑————————————๑
+║┊ ⌲ *DANA* : 081233738677 (diutamakan)
+║┊ ⌲ *GOPAY* : 081233738677
+╰═ ┅ ═══════
+
 ༅ _*KEUNTUNGAN SEWABOT*_
 
 ✧ *Bot akan masuk gc*
@@ -30,7 +36,7 @@ let handler = async (m, { conn }) => {
 _https://chat.whatsapp.com/KpS9eHNALBs3mXXJGtzuZE_
 
 ▌│█║▌║▌║║▌║▌║█│▌
-`𝑴𝒊𝒌𝒖`, 'Payment', '#payment', 'Owner', '#owner', m)
+'𝑴𝒊𝒌𝒖', 'Owner', '#owner', 'Menu', '#menu', m)
 }
 
 handler.help = ['sewa', 'sewabot']
