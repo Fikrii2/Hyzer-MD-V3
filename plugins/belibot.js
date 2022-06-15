@@ -36,7 +36,7 @@ let handler = async (m, { conn }) => {
 _https://chat.whatsapp.com/KpS9eHNALBs3mXXJGtzuZE_
 
 ▌│█║▌║▌║║▌║▌║█│▌
-`𝑴𝒊𝒌𝒖`, 'Owner', '#owner', 'Menu', '#menu', m)
+`.trim(), `${wm}`, 'Owner', '#owner', 'Menu', '#menu', m)
 }
 
 handler.help = ['sewa', 'sewabot']
