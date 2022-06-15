@@ -25,8 +25,8 @@ global.lolkey = 'Fiktod' //biar mudah ngegantinya semisal apikeynya expired:v
 global.zenzkey = 'Fiktod' //ganti jadi apikey lu kalau expired
 global.wm = 'Miku'
 global.watermark = wm
-global.wm2 = '                     「 Miku あ⁩ 」'
-global.wm3 = '⫹⫺ Miku'
+global.wm2 = ' ©𝑴𝒊𝒌𝒖'
+global.wm3 = '©𝑴𝒊𝒌𝒖'
 global.htki = '––––––『' 
 global.htka = '』––––––'
 global.media = 'https://telegra.ph/file/72168c6f1aaa90315c369.jpg'
@@ -36,8 +36,8 @@ global.eror = '_*Server Error*_'
 global.benar = 'Benar ✅\n'
 global.salah = 'Salah ❌\n'
 global.stiker_wait = 'Stiker sedang dibuat'
-global.packname = '2022'
-global.author = '© FikriiSky'
+global.packname = '𝑴𝒊𝒌𝒖'
+global.author = '©FikriiSky'
 
 //=============『 Apikey 』================== //
 global.APIs = { // API Prefix
