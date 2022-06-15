@@ -1,11 +1,5 @@
 let util = require('util')
-let fs = require('fs')
-let fetch = require('node-fetch')
 let simple = require('./lib/simple')
-let time = require('moment-timezone').tz('Asia/Jakarta').format('HH:mm:ss')
-const uploadImage = require('./lib/uploadImage')
-const knights = require('knights-canvas')
-let { MessageType } = require('@adiwajshing/baileys')
 
 const isNumber = x => typeof x === 'number' && !isNaN(x)
 const delay = ms => isNumber(ms) && new Promise(resolve => setTimeout(resolve, ms))
@@ -16,17 +10,11 @@ module.exports = {
     if (!chatUpdate.messages && !chatUpdate.count) return
     let m = chatUpdate.messages.all()[0]
     try {
-      simple.smsg(this, m)
-      switch (m.mtype) {
-        case MessageType.image:
-        case MessageType.video:
-        case MessageType.audio:
-          if (!m.key.fromMe) await delay(1000)
-          if (!m.msg.url) await this.updateMediaMessage(m)
-          break
-      }
-      m.exp = 0
-      m.limit = false
+             m = simple.smsg(this, m) || m
+            if (!m) return
+            // console.log(m)
+            m.exp = 0
+            m.limit = false
       try {
         let user = global.db.data.users[m.sender]
         if (typeof user !== 'object') global.db.data.users[m.sender] = {}
