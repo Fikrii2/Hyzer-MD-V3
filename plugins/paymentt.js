@@ -8,7 +8,7 @@ let handler = async (m, { conn, text }) => {
 ╰═ ┅ ═══════
 ▌│█║▌║▌║║▌║▌║█│▌
 `.trim()
-conn.send3ButtonLoc(m.chat, await (await fetch(fla + 'Payment')).buffer(), ext, `${wm}`, 'Nomor Owner', '.nowner', 'Buy Premium', '.premium', 'Sewa Bot', '.sewa', m)
+conn.send3ButtonLoc(m.chat, await (await fetch(fla + 'Payment')).buffer(), ext, `𝑴𝒊𝒌𝒖`, 'Nomor Owner', '.owner', 'Buy Premium', '.premium', 'Sewa Bot', '.sewabot', m)
 
 }
 handler.help = ['payment']
