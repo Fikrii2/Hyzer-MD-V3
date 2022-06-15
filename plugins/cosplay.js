@@ -1,8 +1,8 @@
 let fetch = require('node-fetch')
      let handler  = async (m, { conn, usedPrefix, command }) => {
-    heum = await fetch(`https://elyas-api2.herokuapp.com/api/randomimage/cosplay`)
+    heum = await fetch(`https://api-reysekha.herokuapp.com/api/random/cosplay?apikey=APIKEY`)
     json = await heum.buffer()
-   conn.sendButtonImg(m.chat, json, 'WIBU', '©RadBotZ', 'Next', `${usedPrefix + command}`, m, false)
+   conn.sendButtonImg(m.chat, json, 'WIBU', '© 𝑴𝒊𝒌𝒖', 'Next', `${usedPrefix + command}`, m, false)
 }
 handler.help = ['cosplay']
 handler.tags = ['anime']
