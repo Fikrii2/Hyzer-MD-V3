@@ -14,7 +14,7 @@ hyzer = {
         }
        } 
      }
-conn.sendImageAsSticker(m.chat, 'https://telegra.ph/file/6adc255ce2cf6d36ace72.png', hyzer, { packname: "sticker by", author: "Fikrii" })
+conn.sendImageAsSticker(m.chat, 'https://telegra.ph/file/6adc255ce2cf6d36ace72.png', Fikrii, { packname: "sticker by", author: "Fikrii" })
 }
 
 handler.customPrefix = /^(ok|Ok)$/i
