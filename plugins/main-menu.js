@@ -299,7 +299,8 @@ let menuu = `┌───────⬣
 │⬡ Mode : ${global.opts['self'] ? 'Self' : 'publik'}
 │⬡ ${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length} Chat Terbanned
 │⬡ ${Object.entries(global.db.data.users).filter(user => user[1].banned).length} Pengguna Terbanned
-╰──────⬣`
+╰──────⬣
+📮 *Note:* Jika menemukan bug, error atau kesulitan dalam penggunaan silahkan laporkan/tanyakan kepada Owner`
 const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fromObject({
         listMessage: {
             title: `${ucapan()} ${name}`,
@@ -331,10 +332,10 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
                   "rowId": `${_p}? absen`
                 }, {
                   "title": "│⛩️│ANIME",
-                  "description": "Menampilkan Menu Anime",
+                  "description": "Kamu wibu ya bang?",
                   "rowId": `${_p}? anime`
                 }, {
-                  "title": "😣『 Vn Imuet 』",
+                  "title": "│😣│『 VN IMUET 』",
                   "description": "Mendengarkan Vn Yang Sangat Imuet",
                   "rowId": ".? vn"                                                      
                 }, {
@@ -426,8 +427,8 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
                   "description": "Menampilkan Maker Text",
                   "rowId": `${_p}? text`
                 }, {
-                  "title": "│🥵│NSFW",
-                  "description": "Menampilkan Menu Haram",
+                  "title": "│🔞│NSFW",
+                  "description": "Tch, dasar sagne",
                   "rowId": `${_p}? nsfw`
                 }, {
                   "title": "│🌚│RANDOM",
