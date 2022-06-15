@@ -36,7 +36,7 @@ let handler = async (m, { conn }) => {
 _https://chat.whatsapp.com/KpS9eHNALBs3mXXJGtzuZE_
 
 ▌│█║▌║▌║║▌║▌║█│▌
-𝑴𝒊𝒌𝒖', 'Owner', '#owner', 'Menu', '#menu', m)
+`𝑴𝒊𝒌𝒖`, 'Owner', '#owner', 'Menu', '#menu', m)
 }
 
 handler.help = ['sewa', 'sewabot']
@@ -45,4 +45,3 @@ handler.command = /^sewa(bot)?$/i
 
 module.exports = handler
 
-let wm = global.botwm
