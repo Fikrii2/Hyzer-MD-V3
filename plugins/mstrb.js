@@ -4,7 +4,8 @@ let handler = async (m, { conn, args }) => {
   if (!args) throw 'Masukkan Parameter'
   m.reply('Sedang Diproses...')
   let res = `https://api-reysekha.herokuapp.com/api/nsfw/masturbation?apikey=APIKEY`
-  conn.sendFile(m.chat, res, 'mstrb.jpg', `wangy wangy wangy`, m, false)
+    heum = await res.buffer()
+  conn.sendButtonImg(m.chat, heum, 'wangy wangy wangy', watermark, 'NEXT', `${usedPrefix + command}`, m)
 }
 handler.help = ['mstrb'].map(v => v + ' ')
 handler.tags = ['nsfw']
