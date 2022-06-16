@@ -378,14 +378,14 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
                   "title": "│🖼│IMAGE",
                   "description": "Menampilkan Menu Image",
                   "rowId": `${_p}? image`
-                }, {
+                }],
                   "title": "▮𝗖𝗮𝘁𝗲𝗴𝗼𝗿𝘆 」"
                 }, {
                   "rows": [{                                	
                  "title": "📝 ∫ » Catatan Perubahan «",
                  "description": "Tentang Update Terakhir ",
                  "rowId": ".notes"
-                 }, {
+                }],
                   "title": "│📡│INTERNET",
                   "description": "Menampilkan Menu Internet",
                   "rowId": `${_p}? internet`
