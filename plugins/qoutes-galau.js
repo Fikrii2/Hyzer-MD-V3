@@ -5,7 +5,7 @@ let anu =`
 
 ${pickRandom(global.galau)}
 `
-conn.reply(m.chat, anu, 'NEXT', '.galau', m) 
+conn.reply(m.chat, anu, m) 
 }
 handler.help = ['galau']
 handler.tags = ['quotes']
