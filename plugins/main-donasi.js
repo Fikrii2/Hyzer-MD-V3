@@ -18,7 +18,9 @@ Arigatou!
 
 Contact person Owner:
 wa.me/${numberowner} (Owner)
-'Pemilik Bot', '.owner', m) 
+
+*donasi via follow ig juga boleh*`
+  conn.sendButtonImg(m.chat, fla + teks, anu, instagram, 'Back', '.help', m) 
 }
 handler.help = ['donasi', 'donate']
 handler.tags = ['xp', 'info']
