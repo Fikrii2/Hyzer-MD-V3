@@ -10,7 +10,8 @@ Opsi Tersedia:
 • sabar
 • kesedihan
 • pernikahan
-• kemerdekaan`
+• kemerdekaan
+Contoh: katabijak cinta`
     if (!args[0]) throw er
     switch (args[0].toLowerCase()) {
         case 'cinta':
@@ -35,7 +36,7 @@ Opsi Tersedia:
     }
 }
 handler.help = ['katabijak'].map(v => v + ' <opsi>')
-handler.tags = ['internet']
+handler.tags = ['quotes']
 handler.command = /^(katabijak|jagokata)$/i
 
 module.exports = handler
