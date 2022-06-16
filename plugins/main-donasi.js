@@ -1,10 +1,5 @@
 let fs = require('fs')
 let handler = async (m, { conn }) => {
-let teks = 'donasi'
-let dana = global.dana
-let pulsa = global.pulsa
-let gopay = global.gopay
-let numberowner = global.numberowner
 let anu = `Hai 👋
 Kalian bisa mendukung saya agar bot ini tetap up to date dengan:
 ┌〔 Donasi • Emoney 〕
