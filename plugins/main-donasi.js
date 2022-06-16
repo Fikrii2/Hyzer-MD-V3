@@ -18,7 +18,7 @@ Arigatou!
 
 Contact person Owner:
 wa.me/${numberowner} (Owner)`
-  conn.sendButtonImg(m.chat, fla + teks, anu, 'Back', '.help', m) 
+  conn.sendButtonImg(m.chat, fla + teks, anu, '𝑴𝒊𝒌𝒖', 'Back', '.help', m) 
 }
 handler.help = ['donasi', 'donate']
 handler.tags = ['xp', 'info']
