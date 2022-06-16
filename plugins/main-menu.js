@@ -49,7 +49,7 @@ const defaultMenu = {
 let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   let tags
   let teks = `${args[0]}`.toLowerCase()
-  let arrayMenu = ['all', 'absen', 'rpg', 'anime', 'vn', 'downloader', 'game', 'fun', 'nulis', 'xp', 'github', 'group', 'image', 'quotes', 'admin', 'tanpakategori', 'info', 'internet', 'islam', 'kerang', 'maker', 'owner', 'suara', 'premium', 'quotes', 'info', 'stalk', 'shortlink', 'sticker', 'tools', 'text', 'nsfw', 'asupan', 'random', 'textpro', 'photooxy']
+  let arrayMenu = ['all', 'absen', 'rpg', 'anime', 'vn', 'sound', 'Sound Music','downloader', 'game', 'fun', 'nulis', 'xp', 'github', 'group', 'image', 'quotes', 'admin', 'info', 'internet', 'islam', 'kerang', 'maker', 'owner', 'suara', 'premium', 'quotes', 'info', 'stalk', 'shortlink', 'sticker', 'tools', 'text', 'nsfw', 'asupan', 'random', 'textpro', 'photooxy']
   if (!arrayMenu.includes(teks)) teks = '404'
   if (teks == 'all') tags = {
   'main': 'MENU UTAMA',
@@ -57,6 +57,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   'absen': 'MENU ABSEN',
   'anime': 'MENU ANIME',
   'vn': 'Vn Imuet',
+  'sound': 'Sound Music',
   'sticker': 'MENU CONVERT',
   'downloader': 'MENU DOWNLOADER',
   'xp': 'MENU EXP',
@@ -95,6 +96,9 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   }
   if (teks == 'vn') tags = {
   'vn': 'MENU VN IMUET',
+  }
+  if (teks == 'sound') tags = {
+    'sound': 'Sound Music'
   }
   if (teks == 'sticker') tags = {
   'sticker': 'MENU CONVERT',
@@ -339,6 +343,10 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
                   "description": "Mendengarkan Vn Yang Sangat Imuet",
                   "rowId": ".? vn"                                                      
                 }, {
+                  "title": "│🎵│『 Sound Music 』",
+                  "description": "Dengar Music Singkat",
+                  "rowId": ".? sound"
+                }, { 
                   "title": "│🎇│STICKER & CONVERTER",
                   "description": "Menampilkan Menu Sticker",
                   "rowId": `${_p}? sticker`
