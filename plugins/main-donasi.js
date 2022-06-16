@@ -17,10 +17,8 @@ Berapapun donasi kalian akan sangat berarti 👍
 Arigatou!
 
 Contact person Owner:
-wa.me/${numberowner} (Owner)
-
-*donasi via follow ig juga boleh*`
-  conn.sendButtonImg(m.chat, fla + teks, anu, instagram, 'Back', '.help', m) 
+wa.me/${numberowner} (Owner)`
+  conn.sendButtonImg(m.chat, fla + teks, anu, 'Back', '.help', m) 
 }
 handler.help = ['donasi', 'donate']
 handler.tags = ['xp', 'info']
