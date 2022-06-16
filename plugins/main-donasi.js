@@ -1,23 +1,21 @@
-let fs = require('fs')
-let handler = async (m, { conn }) => {
-let anu = `Hai 👋
-Kalian bisa mendukung saya agar bot ini tetap up to date dengan:
-┌〔 Donasi • Emoney 〕
-├ Dana : 081233738677
-├ Pulsa : 081233738677
-├ Gopay : 081233738677
-└────
-Berapapun donasi kalian akan sangat berarti 👍
-
-Arigatou!
-
-Contact person Owner:
-wa.me/${numberowner} (Owner)
-
-'Back', '.help', m) 
-}
-handler.help = ['donasi', 'donate']
-handler.tags = ['xp', 'info']
-handler.command = /^(donasi|donate)$/i
+let fetch = require('node-fetch')
+let handler = async (m, { conn }) => conn.sendButtonLoc(m.chat, await (await fetch(bank)).buffer(), `
+*───────「 DONATE 」 ─────*
+╭═══════════════
+║╭─── [ DONASI ] ───
+║│➸ _*Dana*_✅ : 
+║│- 081233738677
+║│
+║│➸ _*Gopay*_✅: 
+║│- 081233738677
+║│
+║│➸ _*OWNER*_
+║│- wa.me/6281233738677
+║╰────────────
+╰═══════════════
+`.trim(), 'Donasi jan asal mencet', 'Owner Bot', '.owner')
+handler.help = ['donasi']
+handler.tags = ['info']
+handler.command = /^dona(te|si)$/i
 
 module.exports = handler
