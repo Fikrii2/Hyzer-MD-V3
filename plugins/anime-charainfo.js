@@ -1,7 +1,7 @@
 let fetch = require('node-fetch')
 let handler = async(m, { conn, text }) => {
   if (!text) throw `Masukkan query!`
-  let res = await fetch(global.API('https://api.jikan.moe', '/v3/search/character', { q: text }))
+  let res = await fetch(global.API('https://api.lolhuman.xyz/api/character?apikey=Fiktod', { q: text }))
   if (!res.ok) throw await res.text()
   let json = await res.json()
   let { name, alternative_names, url, image_url, type } = json.results[0]
