@@ -8,9 +8,9 @@ let numberowner = global.numberowner
 let anu = `Hai 👋
 Kalian bisa mendukung saya agar bot ini tetap up to date dengan:
 ┌〔 Donasi • Emoney 〕
-├ Dana : ${dana}
-├ Pulsa : ${pulsa}
-├ Gopay : ${gopay}
+├ Dana : 081233738677
+├ Pulsa : 081233738677
+├ Gopay : 081233738677
 └────
 Berapapun donasi kalian akan sangat berarti 👍
 
