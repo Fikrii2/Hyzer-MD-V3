@@ -19,5 +19,5 @@ conn.sendImageAsSticker(m.chat, 'https://telegra.ph/file/06a27a93b66f63a5a067e.j
 
 handler.customPrefix = /^(Terima Kasih|Thanks|tq)$/i
 handler.command = new RegExp
-
+\\Fikrii
 module.exports = handler
