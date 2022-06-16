@@ -18,8 +18,7 @@ Arigatou!
 
 Contact person Owner:
 wa.me/${numberowner} (Owner)
-
-'Back', '.help', m) 
+'Pemilik Bot', '.owner', m) 
 }
 handler.help = ['donasi', 'donate']
 handler.tags = ['xp', 'info']
