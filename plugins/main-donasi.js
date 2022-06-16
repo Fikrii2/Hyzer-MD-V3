@@ -1,26 +1,28 @@
-let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
-let text = `
+let fs = require('fs')
+let handler = async (m, { conn }) => {
+let teks = 'donasi'
+let dana = global.dana
+let pulsa = global.pulsa
+let gopay = global.gopay
+let numberowner = global.numberowner
+let anu = `Hai 👋
+Kalian bisa mendukung saya agar bot ini tetap up to date dengan:
+┌〔 Donasi • Emoney 〕
+├ Dana : ${dana}
+├ Pulsa : ${pulsa}
+├ Gopay : ${gopay}
+└────
+Berapapun donasi kalian akan sangat berarti 👍
 
-┌─「 Donasi • Non Pulsa 」
-│ • *Gopay:* [${global.pgopay}]
-│ • *Dana:* [${global.pdana}]
-❏────
-`
-const templateButtons = [
-    {index: 3, urlButton: {displayText: '🌎 Official Group', url: gc}},
-    {index: 4, quickReplyButton: {displayText: 'Menu', id: '.menu'}},
-    {index: 5, quickReplyButton: {displayText: 'Owner', id: '.owner'}},
-]
-let tm = {
-text: text,
-footer: global.wm,
-templateButtons: templateButtons,
-image: {url: fla + 'Donasi'}
-}
-conn.sendMessage(m.chat, tm, m)
-}
-handler.help = ['donasi']
-handler.tags = ['info']
-handler.command = /^dona(te|si)$/i
+Arigatou!
 
-export default handler
+Contact person Owner:
+wa.me/${numberowner} (Owner)
+
+'Back', '.help', m) 
+}
+handler.help = ['donasi', 'donate']
+handler.tags = ['xp', 'info']
+handler.command = /^(donasi|donate)$/i
+
+module.exports = handler
