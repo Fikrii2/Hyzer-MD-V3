@@ -1,32 +1,11 @@
 let fs = require('fs')
-let handler = async (m) => {
+let handler = async (m, { conn }) => {
 let anu =`
 ─────〔 *Galau* 〕─────
 
 ${pickRandom(global.galau)}
 `
-     const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
-     templateMessage: {
-         hydratedTemplate: {
-           hydratedContentText: anu,
-           locationMessage: { 
-           jpegThumbnail: fs.readFileSync('./media/quotes.jpg') }, 
-           hydratedFooterText: wm,
-             quickReplyButton: {
-               displayText: 'Galau',
-               id: '.galau',
-             }
-
-           }]
-         }
-       }
-     }), { userJid: m.sender, quoted: m });
-    //conn.reply(m.chat, text.trim(), m)
-    return await conn.relayMessage(
-         m.chat,
-         template.message,
-         { messageId: template.key.id }
-     )
+conn.reply(m.chat, anu, 'NEXT', '.galau', m) 
 }
 handler.help = ['galau']
 handler.tags = ['quotes']
