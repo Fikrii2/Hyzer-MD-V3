@@ -49,7 +49,7 @@ const defaultMenu = {
 let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   let tags
   let teks = `${args[0]}`.toLowerCase()
-  let arrayMenu = ['all', 'absen', 'rpg', 'anime', 'vn', 'downloader', 'game', 'fun', 'nulis', 'xp', 'github', 'group', 'image', 'quotes', 'admin', 'info', 'internet', 'islam', 'kerang', 'maker', 'owner', 'suara', 'premium', 'quotes', 'info', 'stalk', 'shortlink', 'sticker', 'tools', 'text', 'nsfw', 'asupan', 'random', 'textpro', 'photooxy']
+  let arrayMenu = ['all', 'absen', 'rpg', 'anime', 'vn', 'downloader', 'game', 'fun', 'nulis', 'xp', 'github', 'group', 'image', 'quotes', 'admin', 'tanpakategori', 'info', 'internet', 'islam', 'kerang', 'maker', 'owner', 'suara', 'premium', 'quotes', 'info', 'stalk', 'shortlink', 'sticker', 'tools', 'text', 'nsfw', 'asupan', 'random', 'textpro', 'photooxy']
   if (!arrayMenu.includes(teks)) teks = '404'
   if (teks == 'all') tags = {
   'main': 'MENU UTAMA',
@@ -67,6 +67,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   'group': 'MENU GROUP',
   'image': 'MENU IMAGE',
   'info': 'MENU INFO',
+  '': 'Tanpa Kategori',
   'internet': 'INTERNET',
   'islam' : 'MENU ISLAMI',
   'kerang': 'MENU KERANG',
@@ -125,6 +126,9 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   }
   if (teks == 'info') tags = {
   'info': 'MENU INFO',
+  }
+  if (teks == 'tanpakategori') tags = {
+    '': 'Tanpa Kategori'
   }
   if (teks == 'internet') tags = {
   'internet': 'INTERNET',
@@ -375,6 +379,13 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
                   "description": "Menampilkan Menu Image",
                   "rowId": `${_p}? image`
                 }, {
+                  "title": "▮𝗖𝗮𝘁𝗲𝗴𝗼𝗿𝘆 」"
+                }, {
+                  "rows": [{                                	
+                 "title": "📝 ∫ » Catatan Perubahan «",
+                 "description": "Tentang Update Terakhir ",
+                 "rowId": ".notes"
+                 }, {
                   "title": "│📡│INTERNET",
                   "description": "Menampilkan Menu Internet",
                   "rowId": `${_p}? internet`
