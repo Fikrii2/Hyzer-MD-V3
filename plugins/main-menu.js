@@ -67,7 +67,6 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   'group': 'MENU GROUP',
   'image': 'MENU IMAGE',
   'info': 'MENU INFO',
-  '': 'Tanpa Kategori',
   'internet': 'INTERNET',
   'islam' : 'MENU ISLAMI',
   'kerang': 'MENU KERANG',
@@ -126,9 +125,6 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   }
   if (teks == 'info') tags = {
   'info': 'MENU INFO',
-  }
-  if (teks == 'tanpakategori') tags = {
-    '': 'Tanpa Kategori'
   }
   if (teks == 'internet') tags = {
   'internet': 'INTERNET',
@@ -378,14 +374,7 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
                   "title": "│🖼│IMAGE",
                   "description": "Menampilkan Menu Image",
                   "rowId": `${_p}? image`
-                }],
-                  "title": "▮𝗖𝗮𝘁𝗲𝗴𝗼𝗿𝘆 」"
                 }, {
-                  "rows": [{                                	
-                 "title": "📝 ∫ » Catatan Perubahan «",
-                 "description": "Tentang Update Terakhir ",
-                 "rowId": ".notes"
-                }],
                   "title": "│📡│INTERNET",
                   "description": "Menampilkan Menu Internet",
                   "rowId": `${_p}? internet`
