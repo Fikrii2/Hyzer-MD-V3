@@ -4,6 +4,6 @@ let api-hyzer = 'https://api.zeeoneofc.xyz/api/asupan/aura?apikey=i53VliLP'
 }
 handler.help = ['aura']
 handler.tags = ['asupan']
-handler.command = /^(china)$/i
+handler.command = /^(aura)$/i
 
 module.exports = handler
