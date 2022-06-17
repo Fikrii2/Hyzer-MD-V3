@@ -21,3 +21,4 @@ handler.customPrefix = /^(Terima Kasih|Thanks|tq)$/i
 handler.command = new RegExp
 
 module.exports = handler
+.
