@@ -4,7 +4,7 @@ let api-hyzer = 'https://api.zeeoneofc.xyz/api/asupan/ziva?apikey=i53VliLP'
 }
 handler.help = ['ziva']
 handler.tags = ['asupan']
-handler.command = /^(korea)$/i
+handler.command = /^(ziva)$/i
 
 module.exports = handler
 
