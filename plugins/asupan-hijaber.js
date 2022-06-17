@@ -4,6 +4,6 @@ let api-hyzer = 'https://api.zeeoneofc.xyz/api/asupan/mama_gina?apikey=i53VliLP'
 }
 handler.help = ['mamagina']
 handler.tags = ['asupan']
-handler.command = /^(hijaber)$/i
+handler.command = /^(mamagina)$/i
 
 module.exports = handler
