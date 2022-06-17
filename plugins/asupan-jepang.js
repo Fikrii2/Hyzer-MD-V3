@@ -4,7 +4,7 @@ let api-hyzer = 'https://api.zeeoneofc.xyz/api/asupan/geayubi?apikey=i53VliLP'
 }
 handler.help = ['geayubi']
 handler.tags = ['asupan']
-handler.command = /^(jepang)$/i
+handler.command = /^(geayubi)$/i
 
 module.exports = handler
 
