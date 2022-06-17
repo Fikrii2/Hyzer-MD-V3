@@ -11,7 +11,7 @@ let ye = `@${m.sender.split`@`[0]}`
 let esce = `
 Hai ${ye} Lagi Nyari Sc Ya? 
 _*Sc Masih Private...*_`
-conn.sendBut(m.chat, esce, wm3, 'Thanks', 'thanks', m) 
+conn.sendBut(m.chat, esce, wm3, 'Thanks', 'ok', m) 
 }
 handler.help = ['sc', 'sourcecode']
 handler.tags = ['info']
