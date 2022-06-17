@@ -1,3 +1,4 @@
+let fs = require('fs')
 let handler = async (m, { conn, text, usedPrefix, command }) => {
 
 stc = fs.readFileSync('./src/uh.mp3')
