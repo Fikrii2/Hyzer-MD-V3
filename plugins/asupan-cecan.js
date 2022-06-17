@@ -4,6 +4,6 @@ let api-hyzer = 'https://api.zeeoneofc.xyz/api/asupan/viona?apikey=i53VliLP'
 }
 handler.help = ['viona']
 handler.tags = ['asupan']
-handler.command = /^(cecan)$/i
+handler.command = /^(viona)$/i
 
 module.exports = handler
