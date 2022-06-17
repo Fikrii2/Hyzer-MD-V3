@@ -4,6 +4,6 @@ let api-hyzer = 'https://api.zeeoneofc.xyz/api/asupan/bocil?apikey=i53VliLP'
 }
 handler.help = ['bocil']
 handler.tags = ['asupan']
-handler.command = /^(thailand)$/i
+handler.command = /^(bocil)$/i
 
 module.exports = handler
