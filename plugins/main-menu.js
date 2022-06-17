@@ -320,6 +320,10 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
                   "description": "Nomor Pemilik Bot Chat P/Meminta Save Tidak Akan Di Respon",
                   "rowId": `.owner`
                 },{
+                  "title": "|❗|Rules",
+                  "description": "User yang bijak selalu mematuhi Rules.",
+                  "rowId": ".rules"
+               }, {
                   "title": "❗ INFO BOT",
                   "description": "Menampilkan Menu Info",
                   "rowId": `${_p}? info`
