@@ -319,14 +319,14 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
                   "title": ` 👨 OWNER BOT`,
                   "description": "Nomor Pemilik Bot Chat P/Meminta Save Tidak Akan Di Respon",
                   "rowId": `.owner`
-                },{
-                  "title": "|❗|Rules",
-                  "description": "User yang bijak selalu mematuhi Rules.",
-                  "rowId": ".rules"
                }, {
                   "title": "❗ INFO BOT",
                   "description": "Menampilkan Menu Info",
                   "rowId": `${_p}? info`
+              }, {
+                 "title": "📝 ∫ Catatan Perubahan «",
+                 "description": "Tentang Update Terakhir ",
+                 "rowId": ".notes"
                 }],
                 "title": "INFORMASI BOT"
               }, {
