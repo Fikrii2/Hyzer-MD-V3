@@ -5,7 +5,7 @@ let handler = async(m, { conn, usedPrefix, text, command }) => {
     let res = await fetch(global.API('rey', '/api/download/tiktok', { url: text }, 'apikey'))
     if (!res.ok) throw await `${res.status} ${res.statusText}`
     let json = await res.json()
-    await conn.sendButtonVid(m.chat, json.result.nowatermark, 'Nih Kak', watermark, '...', `𝑮𝒖𝒆 𝑳𝒂𝒈𝒊 𝑺𝒂𝒎𝒏𝒈𝒆𝒆🥵`, m)
+    await conn.sendButtonVid(m.chat, json.result.nowatermark, 'Nih Kak', watermark, 'Thanks', `ok`, m)
 }
 handler.command = /^tiktok$/i
 handler.tags = ['downloader']
