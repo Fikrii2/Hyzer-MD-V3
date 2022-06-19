@@ -1,4 +1,5 @@
 let handler = async(m,{text, conn}) => {
+m.reply('*[ ❗ ] Wait,Proses...*')
 let supa = 'https://api.zeeoneofc.xyz/api/asupan/ukhty?apikey=i53VliLP'
 conn.sendFile(m.chat, supa, null, 'Nih', m)
 }
