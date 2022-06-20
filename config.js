@@ -1,7 +1,7 @@
 //=============『 Utama 』================== //
 global.owner = ['6281233738677'] 
 global.mods = [] 
-global.prems = [] 
+global.prems = ['6281233738677'] 
 
 //=============『 Info Owner 』============== //
 global.nameowner = 'FikriiSky'
@@ -63,7 +63,8 @@ global.APIs = { // API Prefix
   erdwepe: 'https://erdwpe-api.herokuapp.com',
   lolhuman: 'https://api.lolhuman.xyz',
   LeysCoder: 'https://leyscoders-api.herokuapp.com',
-  rey: 'https://server-api-rey.herokuapp.com'
+  rey: 'https://server-api-rey.herokuapp.com',
+  zenz: 'https://zenzapis.xyz/'
 }
 global.APIKeys = { // APIKey Here
   // 'https://website': 'apikey'
@@ -78,6 +79,7 @@ global.APIKeys = { // APIKey Here
   'https://leyscoders-api.herokuapp.com': 'dappakntlll',
   'https://zekais-api.herokuapp.com': 'apikeymu',
   'https://api.lolhuman.xyz': 'Fiktod',
+  'https://zenzapis.xyz/': 'APIKEYKU',
 }
 
 //=============『 RPG GAMES 』================== //
