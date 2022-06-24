@@ -10,7 +10,15 @@ let handler = async (m, { conn }) => {
 let ye = `@${m.sender.split`@`[0]}`
 let esce = `
 Hai ${ye} Lagi Nyari Sc Ya? 
-_*Sc Masih Private...*_`
+╭═[ *SCRIPT* ]═────···
+┴
+│ *Script :* Hyzer
+│ ╰ https://github.com/Hyzerr/Hyzer-MD-V3
+│ *Recode :* Fikrii
+│ ╰🔒 Private
+┬
+╰──────────═┅═──────────
+[❗] Jangan diperjual belikan tanpa seizin owner`
 conn.sendBut(m.chat, esce, wm3, 'Thanks', 'ok', m) 
 }
 handler.help = ['sc', 'sourcecode']
