@@ -12,9 +12,9 @@ let esce = `
 Hai ${ye} Lagi Nyari Sc Ya? 
 ╭═[ *SCRIPT* ]═────···
 ┴
-│ *Script :* Hyzer
+│ 𝐒𝐜𝐫𝐢𝐩𝐭 : Hyzer
 │ ╰ https://github.com/Hyzerr/Hyzer-MD-V3
-│ *Recode :* Fikrii
+│ 𝐑𝐞𝐜𝐨𝐝𝐞 : Fikrii
 │ ╰🔒 Private
 ┬
 ╰──────────═┅═──────────
