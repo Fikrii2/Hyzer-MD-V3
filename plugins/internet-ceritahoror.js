@@ -1,6 +1,6 @@
 let fetch = require('node-fetch')
 let handler = async (m, { conn, text }) => {
-  let res = await fetch('https://x-restapi.herokuapp.com/api/random-cehor?apikey=BETA')
+  let res = await fetch('https://api.lolhuman.xyz/api/ceritahoror?apikey=Fiktod')
   if (!res.ok) throw await res.text()
   let json = await res.json()
     let more = String.fromCharCode(8206)
