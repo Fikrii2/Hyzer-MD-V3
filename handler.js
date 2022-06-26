@@ -479,8 +479,8 @@ module.exports = {
             let participants = (m.isGroup ? groupMetadata.participants : []) || []
             let user = (m.isGroup ? participants.find(u => conn.decodeJid(u.id) === m.sender) : {}) || {} // User Data
             let bot = (m.isGroup ? participants.find(u => conn.decodeJid(u.id) == this.user.jid) : {}) || {} // Your Data
-            let isAdmin = user && user.admin || true // Is User Admin?
-            let isBotAdmin = bot && bot.admin || true // Are you Admin?
+            let isAdmin = user && user.admin || false // Is User Admin?
+            let isBotAdmin = bot && bot.admin || false // Are you Admin?
             for (let name in global.plugins) {
                 let plugin = global.plugins[name]
                 if (!plugin) continue
