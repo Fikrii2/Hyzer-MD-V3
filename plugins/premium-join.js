@@ -11,5 +11,6 @@ handler.tags = ['owner']
 
 handler.command = /^join$/i
 
+handler.owner = true
 
 module.exports = handler
