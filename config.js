@@ -78,7 +78,7 @@ global.APIKeys = { // APIKey Here
   'https://pencarikode.xyz': 'pais', 
   'https://leyscoders-api.herokuapp.com': 'dappakntlll',
   'https://zekais-api.herokuapp.com': 'apikeymu',
-  'https://api.lolhuman.xyz': 'Fiktod',
+  'https://api.lolhuman.xyz': 'APIKEYKU',
   'https://zenzapis.xyz/': 'APIKEYKU',
 }
 
