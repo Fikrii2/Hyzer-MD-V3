@@ -56,8 +56,8 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   'advanced': 'ADVANCED',
   'absen': 'MENU ABSEN',
   'anime': 'MENU ANIME',
-  'vn': 'Vn Imuet',
-  'sound': 'Sound Music',
+  'vn': 'VN',
+  'sound': 'SOUND MUSIC',
   'sticker': 'MENU CONVERT',
   'downloader': 'MENU DOWNLOADER',
   'xp': 'MENU EXP',
@@ -95,7 +95,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   'anime': 'MENU ANIME',
   }
   if (teks == 'vn') tags = {
-  'vn': 'MENU VN IMUET',
+  'vn': 'MENU VN',
   }
   if (teks == 'sound') tags = {
     'sound': 'Sound Music'
@@ -343,8 +343,8 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
                   "description": "Kamu wibu ya bang?",
                   "rowId": `${_p}? anime`
                 }, {
-                  "title": "│😣│『 VN IMUET 』",
-                  "description": "Mendengarkan Vn Yang Sangat Imuet",
+                  "title": "│😣│『 VN 』",
+                  "description": "Menampilkan Menu VN",
                   "rowId": ".? vn"                                                      
                 }, {
                   "title": "│🎵│『 Sound Music 』",
@@ -442,6 +442,10 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
                   "title": "│🔞│NSFW",
                   "description": "Tch, dasar sagne",
                   "rowId": `${_p}? nsfw`
+                }, {
+                  "title": "│🫣│ASUPAN",
+                  "description": "Menampilkan Menu Asupan",
+                  "rowId": `${_p}? asupan`
                 }, {
                   "title": "│🌚│RANDOM",
                   "description": "Menampilkan Menu Random/Gabut",
