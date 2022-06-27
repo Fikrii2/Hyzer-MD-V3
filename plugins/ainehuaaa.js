@@ -4,7 +4,7 @@ let huaaa = fs.readFileSync('./mp3/PTT-20220627-WA0030.opus')
 conn.sendFile(m.chat, gamao, '', '', m, true)
 }
 
-handler.customPrefix = /^(maugak|mau|gakmau|mauu|gakkmauu|gkmau|gkmw)$/i
+handler.customPrefix = /^(gamao|maugak|mau|gakmau|mauu|gakkmauu|gkmau|gkmw)$/i
 handler.command = new RegExp
 
 handler.limit = true
