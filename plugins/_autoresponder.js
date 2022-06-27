@@ -6,7 +6,7 @@ handler.all = async function (m, { isBlocked }) {
     if (isBlocked) return
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - - - - - - */
-/* - - - - - - - Ini autoresponder by aine - - - - - - - */
+/* - - - - - - - Ini autoresponder by Fikrii - - - - - - - */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 let regs = /(aku cinta kamu)/i
@@ -29,7 +29,7 @@ let cintakamuh = cinmu[Math.floor(Math.random() * cinmu.length)]
     }
     
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - - - - - - */
-/* - - - - - - - Ini autoresponder by aine - - - - - - - */
+/* - - - - - - - Ini autoresponder by Fikrii - - - - - - - */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
     let regc = /(aku sayang kamu)/i
@@ -52,7 +52,7 @@ let sayangkamuh = saymu[Math.floor(Math.random() * saymu.length)]
     }
     
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - - - - - - */
-/* - - - - - - - Ini autoresponder by aine - - - - - - - */
+/* - - - - - - - Ini autoresponder by Fikrii - - - - - - - */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
     let regl = /(I love you|love you)/i
@@ -76,7 +76,7 @@ let loveyou = lovou[Math.floor(Math.random() * lovou.length)]
     }
     
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - - - - - - */
-/* - - - - - - - Ini autoresponder by aine - - - - - - - */
+/* - - - - - - - Ini autoresponder by Fikrii - - - - - - - */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
     
     let ass = /(assalamualaikum|assallamualaikum|assalamu\'alaikum|as\'salamualaikum)/i
@@ -100,10 +100,10 @@ let assl = assal[Math.floor(Math.random() * assal.length)]
     }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - - - - - - */
-/* - - - - - - - Ini autoresponder by aine - - - - - - - */
+/* - - - - - - - Ini autoresponder by Fikrii - - - - - - - */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
     
-   /* let hiai = /(hi|hii|hiii|hi aine|hii aine|hiii aine|hy|halo|hallo|helo|hello|hy aine|halo aine|hallo aine|helo aine|hello aine)/i
+   /* let hiai = /(hi|hii|hiii|hi Miku|hii miku|hiii mikuu|hy|halo|hallo|helo|hello|hy miku|halo miku|hallo fikrii|helo fikri|hello Fikrii)/i
     let isAih = hiai.exec(m.text)
     let hiain = [
 '🥰',
