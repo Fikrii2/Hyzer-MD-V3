@@ -1,5 +1,5 @@
 <div align="center">
-<img src="https://telegra.ph/file/677780c08cc83059ac934.jpg" alt="Hyzer Md-V3" width="300" />
+<img src="https://telegra.ph/file/31aedc3d4bc906086410d.png" alt="Hyzer Md-V3" width="300" />
 
 </p>
 <h1 align="center">FikriiSky</h1>
