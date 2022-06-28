@@ -1,7 +1,7 @@
 let fetch = require('node-fetch')
 let handler = async (m, { conn, command, usedPrefix }) => {
 	
-	conn.sendButtonImg(m.chat, await ( await fetch(`https://api.lolhuman.xyz/api/random/husbu?apikey=APIKEYKU`)).buffer(), 'Nih kak', watermark, 'NEXT', `${usedPrefix + command}`, m)
+	conn.sendButtonImg(m.chat, await ( await fetch(`https://api.lolhuman.xyz/api/random/husbu?apikey=Fiktod`)).buffer(), 'Nih kak', watermark, 'NEXT', `${usedPrefix + command}`, m)
 
 }
 
