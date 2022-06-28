@@ -1,6 +1,6 @@
 let fetch = require('node-fetch')
 let handler = async (m, { conn, text }) => {
-  let res = await fetch('https://api.lolhuman.xyz/api/ceritahoror?apikey=Fiktod')
+  let res = await fetch('https://melcanz.com/ceritahantu?&apikey=Cgeh2w8S')
   if (!res.ok) throw await res.text()
   let json = await res.json()
     let more = String.fromCharCode(8206)
@@ -10,7 +10,7 @@ ${readMore}
 ${json.desc}`
   const ftroli = {
     key : {
-    remoteJid: '6283136505591-1614953337@g.us',
+    remoteJid: '6281233738677-1614953337@g.us',
     participant : '0@s.whatsapp.net'
     },
     message: {
