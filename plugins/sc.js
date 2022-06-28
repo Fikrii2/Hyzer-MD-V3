@@ -1,14 +1,13 @@
 let fs = require('fs')
 let handler = async (m) => {
-let stc = fs.readFileSync('./mp3/PTT-20220624-WA0070.opus')
-conn.sendFile(m.chat, sc, '', '', m, true)
+let menu = fs.readFileSync('./mp3/PTT-20220624-WA0070.opus')
+conn.sendFile(m.chat, menu, '', '', m, true)
 }
-handler.customPrefix = /sc|sourcecode|.sc|.sourcecode|script|.script/i
+
+handler.customPrefix = /^(.sc)$/i
 handler.command = new RegExp
 
-module.exports = handler
-
-handler.limit = false
+handler.limit = true
 handler.mods = false 
 handler.premium = false
 handler.group = false 
