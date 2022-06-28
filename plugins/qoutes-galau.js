@@ -1,6 +1,11 @@
 let fs = require('fs')
-let handler  = async (m, { conn }) => {
-  conn.sendButtonLoc(m.chat, await (await fetch(fla + 'Galau')).buffer(), `*────────「 Quotes 」 ────────*\n\n${pickRandom(global.galau)}`, '_*Quotes*_', 'Galau', `.galau`, m)
+let handler = async (m, { conn }) => {
+let anu =`
+─────〔 *Galau* 〕─────
+
+${pickRandom(global.galau)}
+`
+conn.reply(m.chat, anu, m) 
 }
 handler.help = ['galau']
 handler.tags = ['quotes']
@@ -13,6 +18,18 @@ function pickRandom(list) {
 
 global.galau = [
     "Gak salah kalo aku lebih berharap sama orang yang lebih pasti tanpa khianati janji-janji",
+    "Rasanya baru kemarin kamu menawariku seblak. Lalu entah mengapa hari ini menanyakan kabar pun tidak.\n~vinaa",
+    "What's the point of us being close yesterday?\n~Vinaa",
+    "Kamu tidak bisa memaksa seseorang untuk menomor satukan dirimu, sebab prioritas dengan kebutuhan itu jelas beda.\n*BY PUTRI*",
+    "Hubungan kita hanya sampai dilisan, tidak sampai dipertemukan.\n*BY PUTRI*",
+    "Dia sesuka hati, kamu setulus hati.\n*BY PUTRI*",
+    "Mengakhiri bukan berarti tidak mau berjuang lagi...hanya saja aku tidak mau ada lgi,hati yg tersakiti.\n\nBy putri",
+    "Maaf. Tidak ada waktu untuk meladeni gabutmu. Karena aku sibuk dengan kesibukan ku.\n*BY PUTRI*",
+    "Pelangimu mungkin banyak warna. Tapi, tak ada warna yang membuat dia menaruh rasa.\n*BY PUTRI*",
+    "Bahagia terus ya,sampai saat ini lu masih jadi tokoh favorit dikisah hidup gue,luv u.\n\n*BY PUTRI*",
+   "Sorry,gue ga kuat buat semuanya ,mksi ya\n\n*BY PUTRI*",
+   "Kamu memang sosok yg tak terduga Mudah membuat ku bahagia,mudah membuatku hancur saat itu juga.\n\n*BY PUTRI*",
+    "Harusnya kalo udah ga sayang sama aku tu bilang aja gausa di tutup tutupin\n*BY INDI*",
     "Kalau aku memang tidak sayang sama kamu ngapain aku mikirin kamu. Tapi semuanya kamu yang ngganggap aku gak sayang sama kamu",
     "Jangan iri dan sedih jika kamu tidak memiliki kemampuan seperti yang orang miliki. Yakinlah orang lain juga tidak memiliki kemampuan sepertimu",
     "Hanya kamu yang bisa membuat langkahku terhenti, sambil berkata dalam hati mana bisa aku meninggalkanmu",
