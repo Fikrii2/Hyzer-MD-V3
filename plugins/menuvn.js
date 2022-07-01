@@ -4,7 +4,7 @@ let menu = fs.readFileSync('./mp3/PTT-20220624-WA0070.opus')
 conn.sendFile(m.chat, menu, '', '', m, true)
 }
 
-handler.customPrefix = /^(.menu|menu|help)$/i
+handler.customPrefix = /^(menu|help)$/i
 handler.command = new RegExp
 
 handler.limit = true
